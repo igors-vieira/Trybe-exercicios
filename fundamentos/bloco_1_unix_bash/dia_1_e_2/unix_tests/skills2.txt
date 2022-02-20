@@ -1,0 +1,8 @@
+internet
+unix
+bash
+cantar 
+dançar
+dirigir
+escrever
+ler
