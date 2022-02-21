@@ -1,5 +1,8 @@
 - Unix
 - Bash
 - Git
+trybe-skills-updates
+- JAVA
 - HTML
 - CSS
+main
