@@ -1,0 +1,22 @@
+.borda:hover {
+    padding: 2px;
+    border:solid blueviolet ;
+    
+}
+#azul {
+    background-color: blue;
+}
+#laranja {
+    background-color: orange;
+}
+#azv {
+    background-color: #40e0d0;
+    padding: 5px;
+}
+#black {
+    background-color: black;
+    color: white;
+}
+#verF {
+    background-color: #39ff14;
+}
