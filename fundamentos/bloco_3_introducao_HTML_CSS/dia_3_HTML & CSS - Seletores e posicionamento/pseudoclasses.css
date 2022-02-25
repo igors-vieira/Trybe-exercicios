@@ -1,0 +1,19 @@
+.centro {
+    text-align: center;
+}
+li:hover {
+    background-color: aqua;
+    
+}
+li:active {
+    color: green;
+}
+#corLista {
+    background-color: black;
+    color: white;
+}
+.lw {
+    color: white;
+}
+
+
