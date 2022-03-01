@@ -1,0 +1,32 @@
+.red {
+    color: red;
+}
+.italico {
+    font-size: 40px;
+    border: 1px solid black;
+}
+.ordenada {
+    background-color: yellow;
+ }
+
+.par{
+    background-color: green;
+}
+.impar {
+    text-transform: uppercase;
+}
+li {
+    font-size: 20px;
+}
+li em {
+    font-weight: 900;
+}
+.java {
+    color: rgb(212, 114, 130);  
+}
+
+.azul {
+    color: blue;
+}
+
+
