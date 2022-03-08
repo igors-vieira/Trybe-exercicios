@@ -23,7 +23,32 @@
 //     }
 
 // TAREFA 1
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-    for (const number of numbers) {
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+//     for (const number of numbers) {
         
-    }console.log(numbers)
+//     }console.log(numbers)
+
+// TAREFA 2
+// let soma = 0;
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+//     for (let index = 0; index < numbers.length; index += 1) {
+//         soma += numbers[index]  
+//     }console.log(soma)
+
+// TAREFA 3 
+// let media = 0;
+// let soma = 0;
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+//     for (let index = 0; index < numbers.length; index += 1) {
+//         soma += numbers[index]
+//         media = soma / numbers.length  
+//     }console.log(media)
+
+// TAREFA 4
+let divisao = 0;
+let soma = 0;
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+    for (let index = 0; index < numbers.length; index += 1) {
+        soma += numbers[index]
+        media = soma / numbers.length  
+    }if 
