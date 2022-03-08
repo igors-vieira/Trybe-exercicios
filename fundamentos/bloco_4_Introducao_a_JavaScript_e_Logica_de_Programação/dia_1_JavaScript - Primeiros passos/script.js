@@ -1,8 +1,8 @@
-const num1 = 0;
-    if (num1 > 0) {
-        console.log("positivo")
-    }else if (num1 < 0) {
-        console.log("negativo")
+let pecaDeXadrex = "BisPo";
+pecaDeXadrex = pecaDeXadrex.toLowerCase();
+
+    if (pecaDeXadrex === "bispo") {
+        console.log("diagonais")
     } else {
-        console.log(0)
+        console.log("error")
     }
