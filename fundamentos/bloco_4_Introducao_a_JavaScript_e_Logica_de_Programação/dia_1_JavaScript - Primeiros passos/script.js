@@ -1,4 +1,4 @@
-let pecaDeXadrex = "BisPo";
+let pecaDeXadrex = "Bispo";
 pecaDeXadrex = pecaDeXadrex.toLowerCase();
 
     if (pecaDeXadrex === "bispo") {
