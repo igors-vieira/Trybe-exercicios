@@ -9,6 +9,8 @@ if (porcentagem >= 90) {
     console.log("D")
 } else if (porcentagem >= 50) {
     console.log("E")
-} else {
+} else if (porcentagem > 0 && porcentagem < 50) {
     console.log("F")
+} else {
+    console.log("error")
 }
