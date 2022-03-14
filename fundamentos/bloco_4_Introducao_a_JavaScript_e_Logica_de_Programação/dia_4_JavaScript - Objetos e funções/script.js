@@ -13,10 +13,10 @@
 //     year: 2020
 //   };
 //   for (const key in car) {
-//     console.log(key +" "+ car[key])  
+//     console.log(key +" "+ car[key])
 //   }
 
-// TAREFA 1
+// TAREFA 1 FOR IN
 // let info = {
 //   personagem: 'Margarida',
 //   origem: 'Pato Donald',
@@ -34,10 +34,10 @@
 //   recorrente: 'Sim',
 // };
 // for (const key in info){
-  
+
 // }console.log(info.recorrente)
 
-// TAREFA 3 
+// TAREFA 3
 // let info = {
 //   personagem: 'Margarida',
 //   origem: 'Pato Donald',
@@ -48,7 +48,7 @@
 //     console.log(key)
 // }
 
-// TAREFA 4 
+// TAREFA 4
 // let info = {
 //   personagem: 'Margarida',
 //   origem: 'Pato Donald',
@@ -84,10 +84,10 @@
 //   ],
 // };
 // for (const key in leitor){
-//   
+//
 // }console.log('O livro favorito de ' + '' + leitor['nome'] + ' ' + leitor['sobrenome'] + ' ' + "se chama " + leitor.livrosFavoritos[0].titulo + '"') ;
 
-// TAREFA 7 
+// TAREFA 7
 // let leitor = {
 //   nome: 'Julia',
 //   sobrenome: 'Pessoa',
@@ -99,7 +99,7 @@
 //       editora: 'Tordesilhas',
 //     },
 //   ],
-// };leitor.livrosFavoritos[1] = 
+// };leitor.livrosFavoritos[1] =
 //   {
 //   titulo: 'Harry Potter e o Prisioneiro de Azkaban',
 //   autor: 'JK Rowling',
@@ -108,31 +108,54 @@
 // console.log(leitor)
 
 // TAREFA 8
-let leitor = {
-  nome: 'Julia',
-  sobrenome: 'Pessoa',
-  idade: 21,
-  livrosFavoritos: [
-    {
-      titulo: 'O Pior Dia de Todos',
-      autor: 'Daniela Kopsch',
-      editora: 'Tordesilhas',
-    },
-  ],
-};leitor.livrosFavoritos[1] =
-  {
-  titulo: 'Harry Potter e o Prisioneiro de Azkaban',
-  autor: 'JK Rowling',
-  editora: 'Rocco',
-}
-for (const key in leitor) {
-  if (leitor.livrosFavoritos[] === leitor.livrosFavoritos[]) {
-     console.log(leitor.nome +" "+"tem 2" + ' ' + leitor[key])
+// let leitor = {
+//   nome: 'Julia',
+//   sobrenome: 'Pessoa',
+//   idade: 21,
+//   livrosFavoritos: [
+//     {
+//       titulo: 'O Pior Dia de Todos',
+//       autor: 'Daniela Kopsch',
+//       editora: 'Tordesilhas',
+//     },
+//   ],
+// };leitor.livrosFavoritos[1] =
+//   {
+//   titulo: 'Harry Potter e o Prisioneiro de Azkaban',
+//   autor: 'JK Rowling',
+//   editora: 'Rocco',
+// }
+// for (const key in leitor) {
+//   if (leitor.livrosFavoritos[] === leitor.livrosFavoritos[]) {
+//      console.log(leitor.nome +" "+"tem 2" + ' ' + leitor[key])
+//   }
+// }
+
+// Function
+
+// TAREFA 1
+// function palindromo(palavra) {
+//   p
+//   let reverse = arara.split("").reverse().join("")
+//   if (arara == reverse) {
+//     return reverse
+//     } else {
+//     return reverse
+//   }
+//   // console.log(palindromo(arara))
+// }console.log(palindromo())
+
+function compareTrue(true, false) {
+  // seu código aqui
+  if (true && true) {
+    return true
+  } else if (false && false) {
+    return false
+  } else if (true && false) {
+    return false
+  }else if (false && true) {
+    return false
+  } else {
+    return false
   }
-}
-
-
-
-  
-
-
+}console.log(compareTrue)
