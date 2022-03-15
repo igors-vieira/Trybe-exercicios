@@ -27,6 +27,6 @@ for(let count = 0 ; count < array.length; count += 1){
     if(array[count].length < maiorPalavra.length){
         menorPalavra = array[count];
     }
-}console.log(menorPalavra)     
+}console.log(menorPalavra); 
 
-    
+// TAREFA 4
