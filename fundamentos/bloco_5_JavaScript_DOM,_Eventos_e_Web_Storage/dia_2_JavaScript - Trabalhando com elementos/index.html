@@ -56,9 +56,32 @@
     </style>
   </head>
   <body>
+    
     <script>
       // COLOQUE SEU CÓDIGO AQUI
-      
+      let elemento_pai = document.body;
+      let titulo = document.createElement("h1");
+      titulo.innerHTML = " Exercício 5.2 - JavaScript DOM";
+      elemento_pai.appendChild(titulo);
+      let main = document.createElement("main");
+         main.className = "main-content";  
+         let section = document.createElement("section");
+         let section2 = document.createElement("section");
+                let image = document.createElement('img');
+                image.className = "small-image"
+                image.src = "https://picsum.photos/200"
+                section2.appendChild(image)
+         let section3 = document.createElement("section");
+         let paragrafo = document.createElement("p");
+         paragrafo.innerText = "algum texto"
+         section.appendChild(paragrafo);
+         section.className = "center-content"
+         section2.className = "left-content"
+         section3.className = "right-content"
+         main.appendChild(section);
+         main.appendChild(section2)
+         main.appendChild(section3)
+      elemento_pai.appendChild(main);
     </script>
   </body>
 </html>
