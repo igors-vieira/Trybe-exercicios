@@ -1,0 +1,22 @@
+#demoparagraph {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 25px;
+    -moz-column-gap: 25px;
+    column-gap: 25px;
+    -webkit-column-rule: 1px solid rgba(28,110,164,0.48);
+    -moz-column-rule: 1px solid rgba(28,110,164,0.48);
+    column-rule: 1px solid rgba(28,110,164,0.48);
+    }
+    #exercicios {
+        border: 5px inset #1C6EA4;
+        border-radius: 40px 0px 0px 0px;
+        text-align: center;
+        width: 700px;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: aquamarine;
+
+    }
