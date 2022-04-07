@@ -7,5 +7,5 @@ const coolestTvShow = {
     seasons: 6,
   };
   
-  console.log(Object.keys(coolestTvShow));
+  console.log(Object.entries(coolestTvShow));
   
