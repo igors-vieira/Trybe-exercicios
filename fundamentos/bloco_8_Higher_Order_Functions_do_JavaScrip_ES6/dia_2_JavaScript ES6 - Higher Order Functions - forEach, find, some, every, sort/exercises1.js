@@ -62,11 +62,15 @@ const books = [
   ];
   
   // Adicione o código do exercício aqui:
-  function authorBornIn1947(value) {
-    // escreva aqui o seu código
-    if (value.author.birthYear === 1947) {
-        return value.author.name
-    }
+  function authorBornIn1947() {
+    // escreva aqui o seu código value.author.name
+    let ator;
+    books.find((value) => {
+        if (value.author.birthYear === 1947) {
+            return ator = value.author.name
+        }
+    });
+    return ator
   };
 
-  console.log(books.find(authorBornIn1947));
+  console.log(authorBornIn1947());
