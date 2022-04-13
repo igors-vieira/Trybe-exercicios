@@ -72,13 +72,12 @@ const books = [
   
   function fantasyOrScienceFictionAuthors() {
     // escreva seu código aqui
-    let oldbook = books.map((book) => {
+    let oldbooks = books.filter((book) => {
         if (book.genre === 'Fantasia' || book.genre === 'Ficção Científica') {
             return book.author.name
-        }else{
-            return ''
         }
     })
-    return oldbook.sort()
+    let livrovei = oldbooks.map((oldbook) => oldbook.author.name)
+    return livrovei.sort()
   }
   console.log(fantasyOrScienceFictionAuthors());
