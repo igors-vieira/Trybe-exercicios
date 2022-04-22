@@ -29,7 +29,7 @@ const people = [
   // escreva filterPeople abaixo
 
   const filterPeople = () => {
-    const australia = people.filter((pessoa) => pessoa.nationality === 'Australian')
+    const australia = people.filter((pessoa) => pessoa.bornIn < 2001 && pessoa.nationality === 'Australian')
     return australia.map((aust) => {
         const {name, nationality} = aust
         return `Ola sou o(a) ${name} e tenho a nacionalidade ${nationality}`
