@@ -25,9 +25,9 @@ const jupiter = {
   },
 };
 
-console.log(planetDistanceFromSun(mars)); // A
-console.log(planetDistanceFromSun(venus)); // B
-console.log(planetDistanceFromSun(jupiter)); // C
+console.log(planetDistanceFromSun(mars)); 
+console.log(planetDistanceFromSun(venus));
+console.log(planetDistanceFromSun(jupiter));
 
 // resposta e A ,B , C 
 
