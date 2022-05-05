@@ -1,6 +1,8 @@
 import './App.css';
 
-const Task = ({ value }) => {
+const tarefas = ['acordar', 'jogar', 'estudar', 'comer', 'jogar dnv', 'Mimir']
+
+const task = ( value ) => {
   return (
     <li>{value}</li>
   );
@@ -8,10 +10,12 @@ const Task = ({ value }) => {
 
 function App() {
   return (
-    <div className="App">
+    <><div className="App">
       hello, world!!
-      <Task value={'abc'}/>
-    </div>
+    </div ><div className="App">
+        {tarefas.map((tarefa) => task(tarefa))}
+      </div></>
+      
   );
 }
 
