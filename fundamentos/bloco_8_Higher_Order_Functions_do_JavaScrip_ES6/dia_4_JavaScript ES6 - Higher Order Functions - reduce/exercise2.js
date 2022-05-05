@@ -63,11 +63,14 @@ const books = [
   
   // Adicione o código do exercício aqui:
 
-  function smallerName() {
-    let nameBook = '';
-    // escreva aqui o seu código
-    books.forEach((value) => value.name.length < nameBook.length || nameBook.length === 0 ? nameBook = value.name : nameBook)
-    // Variável nameBook que receberá o valor do menor nome;
-    return nameBook;
-  }
-  console.log(smallerName());
+  const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
+
+function reduceNames() {
+  // escreva seu código aqui
+  const names = books.reduce((acc, book, index, array) => {
+    if (index === array.length - 1) return `${acc} ${book.author.name}.`;
+    return `${acc} ${book.author.name},`;
+  }, '');
+  return names.trim();
+}
+console.log(reduceNames());

@@ -63,11 +63,18 @@ const books = [
   
   // Adicione o código do exercício aqui:
 
-  function smallerName() {
-    let nameBook = '';
-    // escreva aqui o seu código
-    books.forEach((value) => value.name.length < nameBook.length || nameBook.length === 0 ? nameBook = value.name : nameBook)
-    // Variável nameBook que receberá o valor do menor nome;
-    return nameBook;
+  const expectedResult = [
+    'O Senhor dos Anéis',
+    'Fundação',
+    'O Chamado de Cthulhu',
+  ];
+  
+  function oldBooks() {
+    // escreva seu código aqui
+    let oldbook = books.filter((book) => {
+        const sub = 2022 - book.releaseYear
+            return  sub > 60 
+        })
+        return oldbook.map((ob) => ob.name)
   }
-  console.log(smallerName());
+  console.log(oldBooks());

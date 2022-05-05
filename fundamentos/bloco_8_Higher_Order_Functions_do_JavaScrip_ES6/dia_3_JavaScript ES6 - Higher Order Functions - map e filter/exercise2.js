@@ -63,11 +63,36 @@ const books = [
   
   // Adicione o código do exercício aqui:
 
-  function smallerName() {
-    let nameBook = '';
-    // escreva aqui o seu código
-    books.forEach((value) => value.name.length < nameBook.length || nameBook.length === 0 ? nameBook = value.name : nameBook)
-    // Variável nameBook que receberá o valor do menor nome;
-    return nameBook;
-  }
-  console.log(smallerName());
+  const expectedResult = [
+    {
+      age: 31,
+      author: 'Isaac Asimov',
+    },
+    {
+      age: 38,
+      author: 'H. P. Lovecraft',
+    },
+    {
+      age: 39,
+      author: 'Stephen King',
+    },
+    {
+      age: 43,
+      author: 'George R. R. Martin',
+    },
+    {
+      age: 45,
+      author: 'Frank Herbert',
+    },
+    {
+      age: 62,
+      author: 'J. R. R. Tolkien',
+    },
+  ];
+  
+  function nameAndAge() {
+    // escreva seu código aqui
+    let idade = books.map((book) => ({age: book.releaseYear - book.author.birthYear, author: book.author.name}))
+    return idade.sort((a, b) => a.age - b.age);
+ }
+ console.log(nameAndAge());

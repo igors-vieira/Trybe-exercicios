@@ -63,11 +63,36 @@ const books = [
   
   // Adicione o código do exercício aqui:
 
-  function smallerName() {
-    let nameBook = '';
-    // escreva aqui o seu código
-    books.forEach((value) => value.name.length < nameBook.length || nameBook.length === 0 ? nameBook = value.name : nameBook)
-    // Variável nameBook que receberá o valor do menor nome;
-    return nameBook;
+  const expectedResult = [
+    {
+      id: 6,
+      name: 'O Chamado de Cthulhu',
+      genre: 'Terror',
+      author: { name: 'H. P. Lovecraft', birthYear: 1890 },
+      releaseYear: 1928,
+    },
+    {
+      id: 3,
+      name: 'Fundação',
+      genre: 'Ficção Científica',
+      author: { name: 'Isaac Asimov', birthYear: 1920 },
+      releaseYear: 1951,
+    },
+    {
+      id: 2,
+      name: 'O Senhor dos Anéis',
+      genre: 'Fantasia',
+      author: { name: 'J. R. R. Tolkien', birthYear: 1892 },
+      releaseYear: 1954,
+    },
+  ];
+  
+  function oldBooksOrdered() {
+    // escreva seu código aqui
+    let oldbook = books.filter((book) => {
+    const sub = 2022 - book.releaseYear
+        return  sub > 60 
+    })
+    return oldbook.sort((a, b) => a.releaseYear - b.releaseYear)
   }
-  console.log(smallerName());
+  console.log(oldBooksOrdered());

@@ -63,11 +63,14 @@ const books = [
   
   // Adicione o código do exercício aqui:
 
-  function smallerName() {
-    let nameBook = '';
-    // escreva aqui o seu código
-    books.forEach((value) => value.name.length < nameBook.length || nameBook.length === 0 ? nameBook = value.name : nameBook)
-    // Variável nameBook que receberá o valor do menor nome;
-    return nameBook;
-  }
-  console.log(smallerName());
+  const expectedResult = 43;
+
+function averageAge() {
+  // escreva seu código aqui
+ const abobra = books.reduce((accBook, idade) => {
+    let age = idade.releaseYear - idade.author.birthYear;
+    return accBook += age;
+  }, 0)
+  return abobra / books.length
+}
+console.log(averageAge());

@@ -63,11 +63,12 @@ const books = [
   
   // Adicione o código do exercício aqui:
 
-  function smallerName() {
-    let nameBook = '';
-    // escreva aqui o seu código
-    books.forEach((value) => value.name.length < nameBook.length || nameBook.length === 0 ? nameBook = value.name : nameBook)
-    // Variável nameBook que receberá o valor do menor nome;
-    return nameBook;
+  const expectedResult = 'O Senhor dos Anéis';
+
+  function authorWith3DotsOnName() {
+    return books.find((book) => (
+      book.author.name.split(' ')
+        .filter((word) => word.endsWith('.')).length === 3
+    )).name;
   }
-  console.log(smallerName());
+  console.log(authorWith3DotsOnName());
