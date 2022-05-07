@@ -1,0 +1,22 @@
+.App {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.App section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 500px;
+  align-self: center;
+}
+
+.App article {
+  margin-bottom: 25px;
+  margin-left: 75px;
+  border: 1px solid rgb(161, 157, 157);
+  border-radius: 10%;
+}
