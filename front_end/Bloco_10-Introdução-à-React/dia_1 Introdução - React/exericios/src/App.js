@@ -4,7 +4,7 @@ const tarefas = ['acordar', 'jogar', 'estudar', 'comer', 'jogar dnv', 'Mimir']
 
 const task = ( value ) => {
   return (
-    <li>{value}</li>
+    <li key={value}>{value}</li>
   );
 }
 
